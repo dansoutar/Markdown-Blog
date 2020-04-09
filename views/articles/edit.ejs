@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="../css/style.css">z -->
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Blog</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class='mb-4'>Edit Article</h2>
+        <form action="/articles/<%= article.id %>?_method=PUT" method='POST'>
+            <%- include('_formFields') %>
+        </form>
+    </div>
+</body>
+</html>
